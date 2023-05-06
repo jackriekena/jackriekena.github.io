@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Instagram Authorization Code</title>
+</head>
+<body>
+	<h1>Instagram Authorization Code:</h1>
+	<p id="code"></p>
+
+	<script>
+		// Get the code from the URL parameter
+		const urlParams = new URLSearchParams(window.location.search);
+		const code = urlParams.get('code');
+		
+		// Display the code on the webpage
+		document.getElementById('code').textContent = code;
+	</script>
+</body>
+</html>
